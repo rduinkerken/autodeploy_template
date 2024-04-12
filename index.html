@@ -4,11 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Autodeployment example</title>
 </head>
 
 <body>
-    <h1> Hello World! </h1>
+    <div>
+        <h1> Auto deployment </h1>
+        <p style="color: blue;font-weight: bolder;"> ... on push > main </p>
+        <p> Activeer GitHub Action: .github/workflows/deploy.yml
+            (<a href="https://github.com/SamKirkland/FTP-Deploy-Action/tree/4.0.0/" style="color: orange">voortgekomen
+                van FTP-Deploy-Action
+            </a><span style="font-weight: bold">van Sam Kirkland</span>)
+        </p>
+        <p> Deze GitHub action gebruikt de door jou ingestelde <a
+                href="https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions"
+                style="color: orange">Repository Secrets</a> </p>
+        <p> Met deze Repository secrets kan de FTP-Deploy-Action de huidige versie van de code op de FTP-server
+            vervangen. </p>
+        <div style="display:flex;justify-content: center;margin-top:75px">
+            <img src="meditate.png" width="350">
+        </div>
+    </div>
 </body>
 
 </html>
